@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_top_home"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rectangle_top_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:src="@drawable/logo_zona_english_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_notif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/dimen_32dp"
+            android:fontFamily="@font/sf_ui_display_semibold"
+            android:text="@string/saldo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_logo" />
+
+        <ImageView
+            android:id="@+id/imageView_balance"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:src="@drawable/ic_saldo"
+            app:layout_constraintStart_toStartOf="@id/textView_balance"
+            app:layout_constraintTop_toBottomOf="@id/textView_balance" />
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:fontFamily="@font/sf_ui_display_bold"
+            android:text="Rp.100.000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xxnormal"
+            app:layout_constraintBottom_toBottomOf="@id/imageView_balance"
+            app:layout_constraintStart_toEndOf="@id/imageView_balance"
+            app:layout_constraintTop_toTopOf="@id/imageView_balance" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:background="@drawable/bg_btn_top_up"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_8dp"
+            app:layout_constraintBottom_toBottomOf="@id/tvBalance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvBalance">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_ui_display_bold"
+                android:text="Top Up"
+                android:textColor="@color/text_color_dark_blue" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:src="@drawable/ic_plus" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Start Nested Scroll to Study Video end to Zone Talk -->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint_top_home">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView_studyVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:fontFamily="@font/sf_ui_display_semibold"
+                android:text="@string/study_videos"
+                android:textColor="@color/text_color_dark_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvStudyVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView_studyVideo"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_list_study_video" />
+
+            <TextView
+                android:id="@+id/textView_infoPromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/sf_ui_display_semibold"
+                android:text="@string/info_and_promo"
+                android:textColor="@color/text_color_dark_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rvStudyVideo" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvInfoPromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView_infoPromo"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_list_info_promo" />
+
+            <TextView
+                android:id="@+id/textView_onlineMeetUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/sf_ui_display_semibold"
+                android:text="@string/online_meetup"
+                android:textColor="@color/text_color_dark_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rvInfoPromo" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOnlineMeetUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView_onlineMeetUp"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_list_online_meetup" />
+
+
+            <TextView
+                android:id="@+id/textView_offlineMeetUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/sf_ui_display_semibold"
+                android:text="@string/offline_meetup"
+                android:textColor="@color/text_color_dark_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rvOnlineMeetUp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOfflineMeetUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintStart_toStartOf="@id/textView_offlineMeetUp"
+                app:layout_constraintTop_toBottomOf="@id/textView_offlineMeetUp"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_list_offline_meetup" />
+
+            <TextView
+                android:id="@+id/textView_ZoneTalk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/sf_ui_display_semibold"
+                android:text="@string/zone_talk"
+                android:textColor="@color/text_color_dark_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rvOfflineMeetUp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvZoneTalk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_zone_talk"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintStart_toStartOf="@id/textView_ZoneTalk"
+                app:layout_constraintTop_toBottomOf="@id/textView_ZoneTalk"
+                tools:itemCount="5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- End Nested Scroll to Study Video end to Zone Talk -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
