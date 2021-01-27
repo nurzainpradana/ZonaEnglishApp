@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">ZonaEnglish</string>
+    <string name="home">Home</string>
+    <string name="live_class">Live Class</string>
+    <string name="tutor">Tutor</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="schedule">Schedule</string>
+    <string name="saldo">Saldo</string>
+    <string name="study_videos">Study Video</string>
+    <string name="info_and_promo">Info and Promo</string>
+    <string name="online_meetup">Online Meetup</string>
+    <string name="offline_meetup">Offline Meetup</string>
+    <string name="zone_talk">Zone Talk</string>
+    <string name="speak_up">Speak Up</string>
+    <string name="sample_title_zone_talk">Cara Mendapatkan Beasiswa</string>
+    <string name="sample_desc_zone_talk">Mengetahui bagaimana dapat bersekolah dengan gratis di Luar Negeri</string>
 </resources>

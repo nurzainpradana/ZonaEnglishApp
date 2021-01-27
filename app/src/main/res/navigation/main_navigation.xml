@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.zn.zonaenglish.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_liveClass"
+        android:name="com.zn.zonaenglish.ui.liveclass.LiveClassFragment"
+        android:label="fragment_live_class"
+        tools:layout="@layout/fragment_live_class" />
+    <fragment
+        android:id="@+id/nav_Schedule"
+        android:name="com.zn.zonaenglish.ui.schedule.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" />
+    <fragment
+        android:id="@+id/nav_tutor"
+        android:name="com.zn.zonaenglish.ui.tutor.TutorFragment"
+        android:label="fragment_tutor"
+        tools:layout="@layout/fragment_tutor" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.zn.zonaenglish.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
