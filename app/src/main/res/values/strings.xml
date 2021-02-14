@@ -5,9 +5,7 @@
     <string name="tutor">Tutor</string>
     <string name="profile">Profil</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="url_image">http://zainpradana.com/zonaenglish%s</string>
-    <string name="url_image_info_promo">http://zainpradana.com/zonaenglish%s</string>
     <string name="schedule">Schedule</string>
     <string name="saldo">Saldo</string>
     <string name="study_videos">Study Video</string>
@@ -35,7 +33,6 @@
     <string name="account">Account</string>
     <string name="change_profile">Change Profile</string>
     <string name="about">About</string>
-    <string name="hint">Hint</string>
     <string name="advantage">Advantage</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="update_photo_profile">Update Photo Profile</string>
@@ -62,7 +59,6 @@
     <string name="enter_your_password">Enter Your Password?</string>
     <string name="show_password">Show Password</string>
     <string name="forgot_password">Forgot Password?</string>
-    <string name="enter_your_full_name">Enter your full name</string>
     <string name="create_password">Create Password</string>
     <string name="verification_number_hp">Verification Number HP</string>
     <string name="desc_confirm_number_hp">Enter your cellphone number to help us confirm identity.</string>

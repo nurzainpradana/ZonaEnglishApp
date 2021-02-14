@@ -1,10 +1,13 @@
 package com.zn.zonaenglish.ui.home.studyvideo.detail
 
+import android.app.Activity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.ahmadrosid.svgloader.SvgLoader
 import com.bumptech.glide.Glide
+import com.zn.zonaenglish.R
 import com.zn.zonaenglish.databinding.FragmentDetailStudyVideoBinding
 import com.zn.zonaenglish.network.ApiClient
 import com.zn.zonaenglish.network.ApiConfig

@@ -15,8 +15,8 @@ import com.zn.zonaenglish.repository.homerepository.HomeRemoteDataSource
 import com.zn.zonaenglish.repository.homerepository.HomeRepository
 import com.zn.zonaenglish.ui.home.infopromo.InfoPromoAdapter
 import com.zn.zonaenglish.ui.home.infopromo.model.InfoPromoItem
-import com.zn.zonaenglish.ui.home.studyvideo.detail.DetailStudyActivity
 import com.zn.zonaenglish.ui.home.studyvideo.StudyVideoAdapter
+import com.zn.zonaenglish.ui.home.studyvideo.detail.DetailStudyActivity
 import com.zn.zonaenglish.ui.home.studyvideo.model.StudyVideoResponseItem
 import com.zn.zonaenglish.util.Const.API_KEY
 

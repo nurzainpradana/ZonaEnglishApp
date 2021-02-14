@@ -8,13 +8,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
 import com.zn.zonaenglish.databinding.ActivityLoginEmailBinding
-import com.zn.zonaenglish.hawkstorage.HawkStorage
 import com.zn.zonaenglish.network.ApiConfig
 import com.zn.zonaenglish.ui.login.loginemail.model.LoginResponse
 import com.zn.zonaenglish.ui.login.loginpassword.LoginPasswordActivity
 import okhttp3.ResponseBody
-import org.jetbrains.anko.startActivity
-import org.jetbrains.anko.toast
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Converter

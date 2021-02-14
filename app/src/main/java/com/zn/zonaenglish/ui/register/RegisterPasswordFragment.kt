@@ -1,10 +1,11 @@
-package com.zn.zonaenglish
+package com.zn.zonaenglish.ui.register
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.zn.zonaenglish.R
 
 class RegisterPasswordFragment : Fragment() {
 

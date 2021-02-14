@@ -3,7 +3,7 @@ package com.zn.zonaenglish.ui.login
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.zn.zonaenglish.RegisterNameFragment
+import com.zn.zonaenglish.ui.register.RegisterNameFragment
 import com.zn.zonaenglish.databinding.ActivityLoginScreenBinding
 import com.zn.zonaenglish.ui.login.loginemail.LoginEmailActivity
 import org.jetbrains.anko.startActivity

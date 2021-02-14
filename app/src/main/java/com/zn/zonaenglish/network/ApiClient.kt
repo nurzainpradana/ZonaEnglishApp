@@ -1,6 +1,5 @@
 package com.zn.zonaenglish.network
 
-import com.zn.zonaenglish.BuildConfig
 import com.zn.zonaenglish.ui.home.infopromo.model.InfoPromoResponse
 import com.zn.zonaenglish.ui.home.studyvideo.model.StudyLevelResponse
 import com.zn.zonaenglish.ui.home.studyvideo.model.StudyVideoResponse

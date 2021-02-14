@@ -1,11 +1,10 @@
 package com.zn.zonaenglish.ui.home.studyvideo
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.zn.zonaenglish.R
 import com.zn.zonaenglish.databinding.ItemListStudyVideoBinding
 import com.zn.zonaenglish.ui.home.studyvideo.model.StudyVideoResponseItem
@@ -45,10 +44,10 @@ class StudyVideoAdapter : RecyclerView.Adapter<StudyVideoAdapter.ViewHolder>() {
                     tvTitleStudyVideo.text = studyVideo.name
                     Glide.with(itemView.context)
                         .load(itemView.context.getString(R.string.url_image, studyVideo.remark2))
-                        .override(500, 500)
-                        .fitCenter()
+                        .diskCacheStrategy(DiskCacheStrategy.NONE)
                         .into(imgViewStudyVideo)
                 }
+
             }
 
         init {

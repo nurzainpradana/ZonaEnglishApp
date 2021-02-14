@@ -6,12 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.zn.zonaenglish.R
 import com.zn.zonaenglish.databinding.FragmentProfileBinding
 import com.zn.zonaenglish.hawkstorage.HawkStorage
 import com.zn.zonaenglish.network.ApiClient
 import com.zn.zonaenglish.network.ApiConfig
-import com.zn.zonaenglish.repository.homerepository.HomeRemoteDataSource
 import com.zn.zonaenglish.repository.profilerepository.ProfileRemoteRepository
 import com.zn.zonaenglish.repository.profilerepository.ProfileRepository
 import com.zn.zonaenglish.ui.login.LoginScreenActivity

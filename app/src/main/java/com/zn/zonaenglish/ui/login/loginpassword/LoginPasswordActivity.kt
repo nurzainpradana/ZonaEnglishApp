@@ -10,7 +10,6 @@ import com.zn.zonaenglish.databinding.LoginPasswordActivityBinding
 import com.zn.zonaenglish.hawkstorage.HawkStorage
 import com.zn.zonaenglish.network.ApiConfig
 import com.zn.zonaenglish.ui.login.loginemail.LoginRequest
-import com.zn.zonaenglish.ui.login.loginemail.LoginRequestEmail
 import com.zn.zonaenglish.ui.login.loginemail.model.LoginResponse
 import okhttp3.ResponseBody
 import org.jetbrains.anko.startActivity
