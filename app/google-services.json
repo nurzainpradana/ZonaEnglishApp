@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "432911286679",
+    "project_id": "zonaenglish-89191",
+    "storage_bucket": "zonaenglish-89191.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432911286679:android:c0256bafdb26051d9304d2",
+        "android_client_info": {
+          "package_name": "com.zn.zonaenglish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432911286679-saioohh3nnhg0kjchu5bsods6b8p43k4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuTxdVhZIUHkK4Xsd8RcL9Rjy-eRwS_Og"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432911286679-saioohh3nnhg0kjchu5bsods6b8p43k4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

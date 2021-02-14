@@ -8,10 +8,25 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!-- Add Color   -->
     <color name="gray">#BDBDBD</color>
     <color name="color_state_BgBottom">#FF0000</color>
-    
+    <color name="color_red">#FF0000</color>
+    <color name="color_blue_young">#2D9CDB</color>
+    <color name="color_blue_old">#2F80ED</color>
+    <color name="color_green">#219653</color>
+    <color name="bg_view">#E0E0E0</color>
+    <color name="color_btn_gray">#EAEBEF</color>
+    <color name="color_primary">#0D1D42</color>
+
     <!-- Resource text Color -->
     <color name="text_color_dark_blue">#0D1D42</color>
-    <color name="text_color_gray1">#333333</color>
+    <color name="text_color_gray_primary">#333333</color>
+    <color name="text_color_gray_second">#828282</color>
+    <color name="text_color_black_three">#333333</color>
+    <color name="text_color_black">#333333</color>
+    <color name="text_color_black_second">#1C1D1D</color>
+    <color name="text_color_green">#42A701</color>
+    <color name="text_color_brown">#4F4F4F</color>
+
 </resources>

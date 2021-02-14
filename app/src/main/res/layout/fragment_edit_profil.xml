@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.edit.EditProfileFragment">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/appbar_edit_profile" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImgEditProfile"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:src="@drawable/ic_tutor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar" />
+
+    <TextView
+        android:id="@+id/tvChangePhotoProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/update_photo_profile"
+        android:textColor="@color/text_color_dark_blue"
+        android:textSize="@dimen/text_size_xnormal"
+        app:layout_constraintBottom_toBottomOf="@id/circleImgEditProfile"
+        app:layout_constraintStart_toEndOf="@id/circleImgEditProfile"
+        app:layout_constraintTop_toTopOf="@id/circleImgEditProfile" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/full_name"
+        android:textColor="@color/text_color_gray_second"
+        app:layout_constraintStart_toStartOf="@id/circleImgEditProfile"
+        app:layout_constraintTop_toBottomOf="@id/circleImgEditProfile" />
+
+    <EditText
+        android:id="@+id/edChangeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:hint="@string/full_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textViewEmail"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmail" />
+
+    <TextView
+        android:id="@+id/textView_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/number_phone"
+        android:textColor="@color/text_color_gray_second"
+        app:layout_constraintStart_toStartOf="@id/edChangeName"
+        app:layout_constraintTop_toBottomOf="@id/edChangeName" />
+
+    <TextView
+        android:id="@+id/tvPhoneEditNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/sample_phone_number"
+        android:textColor="@color/text_color_black_second"
+        android:textSize="@dimen/text_size_xnormal"
+        app:layout_constraintStart_toStartOf="@id/textView_phoneNumber"
+        app:layout_constraintTop_toBottomOf="@id/textView_phoneNumber" />
+
+    <TextView
+        android:id="@+id/tvChangePhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/change"
+        android:textColor="@color/text_color_dark_blue"
+        android:textSize="@dimen/text_size_xnormal"
+        app:layout_constraintBottom_toBottomOf="@id/tvPhoneEditNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvPhoneEditNumber" />
+
+    <TextView
+        android:id="@+id/textView_NIK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/nik"
+        android:textColor="@color/text_color_gray_second"
+        app:layout_constraintStart_toStartOf="@id/tvPhoneEditNumber"
+        app:layout_constraintTop_toBottomOf="@id/tvPhoneEditNumber" />
+
+    <TextView
+        android:id="@+id/tvNIK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/sample_nik"
+        android:textColor="@color/text_color_gray_second"
+        android:textSize="@dimen/text_size_xnormal"
+        app:layout_constraintStart_toStartOf="@id/textView_NIK"
+        app:layout_constraintTop_toBottomOf="@id/textView_NIK" />
+
+    <ImageView
+        android:layout_width="@dimen/dimen_18dp"
+        android:layout_height="@dimen/dimen_18dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_exclamation_mark"
+        app:layout_constraintBottom_toBottomOf="@id/tvNIK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvNIK" />
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/email"
+        android:textColor="@color/text_color_gray_second"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNIK" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/sample_email"
+        android:textColor="@color/text_color_black_second"
+        android:textSize="@dimen/text_size_xnormal"
+        app:layout_constraintStart_toStartOf="@id/textViewEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+    <TextView
+        android:id="@+id/tvChangeEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/change"
+        android:textColor="@color/text_color_dark_blue"
+        android:textSize="@dimen/text_size_xnormal"
+        app:layout_constraintBottom_toBottomOf="@id/tvEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvEmail" />
+
+    <Button
+        android:layout_width="@dimen/with_button"
+        android:layout_height="@dimen/height_button"
+        android:layout_marginBottom="@dimen/dimen_36dp"
+        android:backgroundTint="@color/color_blue_young"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/save"
+        android:textSize="@dimen/text_size_xnormal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.studyvideo.detail.DetailVideoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainView_top"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_top_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_notif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <VideoView
+        android:id="@+id/videoViewDetail"
+        android:layout_width="380dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:background="@drawable/img_sample_video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constrainView_top" />
+
+    <TextView
+        android:id="@+id/tvTitleVideoDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fontFamily="@font/sf_ui_display_semibold"
+        android:text="@string/sample_title_video"
+        android:textColor="@color/text_color_gray_primary"
+        android:textSize="@dimen/text_size_xxnormal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/videoViewDetail" />
+
+    <TextView
+        android:id="@+id/tvDescVideoDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/sample_lorem"
+        android:textColor="@color/text_color_gray_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleVideoDetail" />
+
+    <View
+        android:id="@+id/viewRestrictionsDesc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:background="@color/bg_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescVideoDetail" />
+
+    <TextView
+        android:id="@+id/textView_ttlViewers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/total_viewers"
+        android:textColor="@color/text_color_gray_second"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewRestrictionsDesc" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/_5_000"
+        android:textColor="@color/text_color_black_three"
+        android:textSize="@dimen/text_size_xnormal"
+        app:layout_constraintStart_toEndOf="@id/textView_ttlViewers"
+        app:layout_constraintTop_toBottomOf="@id/viewRestrictionsDesc" />
+
+    <ImageView
+        android:id="@+id/imgFavoriteVideo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:src="@drawable/ic_favorite_border"
+        app:layout_constraintEnd_toEndOf="@id/viewRestrictionsDesc"
+        app:layout_constraintTop_toBottomOf="@id/viewRestrictionsDesc" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_56dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_ttlViewers">
+
+        <Button
+            android:id="@+id/btnTutorInGroup"
+            android:layout_width="180dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:backgroundTint="@color/color_green"
+            android:fontFamily="@font/sf_ui_display_semibold"
+            android:text="Practice with Tutor Ingroup"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnTutorPrivate"
+            android:layout_width="180dp"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/color_blue_old"
+            android:fontFamily="@font/sf_ui_display_semibold"
+            android:text="@string/practice_with_tutor_private"
+            android:textAllCaps="false"
+            android:textSize="@dimen/textsize_small" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

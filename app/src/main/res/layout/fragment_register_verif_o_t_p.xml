@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".RegisterVerifOTPFragment">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/appbar_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_codeVerif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/sf_ui_display_semibold"
+        android:text="@string/verifCodePassword"
+        android:textColor="@color/text_color_black_second"
+        android:textSize="@dimen/text_size_xheader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar" />
+
+    <TextView
+        android:id="@+id/textView_descVerifPassCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/otp_code_sent"
+        android:textColor="@color/text_color_brown"
+        app:layout_constraintStart_toStartOf="@id/textView_codeVerif"
+        app:layout_constraintTop_toBottomOf="@id/textView_codeVerif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_phone_number"
+        android:textColor="@color/text_color_black_three"
+        app:layout_constraintTop_toTopOf="@id/textView_descVerifPassCode"
+        app:layout_constraintBottom_toBottomOf="@id/textView_descVerifPassCode"
+        app:layout_constraintStart_toEndOf="@id/textView_descVerifPassCode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

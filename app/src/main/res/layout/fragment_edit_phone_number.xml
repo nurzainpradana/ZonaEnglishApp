@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.edit.EditPhoneNumberFragment">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/appbar_edit_profile" />
+
+    <LinearLayout
+        android:id="@+id/lLayoutFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_ui_display_bold"
+            android:text="@string/change_phone_number"
+            android:textColor="@color/text_color_green"
+            android:textSize="@dimen/text_size_xnormal"
+            app:layout_constraintTop_toBottomOf="@id/appBar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:fontFamily="@font/sf_ui_display_medium"
+            android:text="@string/registered_mobile_number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:fontFamily="@font/sf_ui_display_medium"
+            android:text="@string/sample_phone_number"
+            android:textColor="@color/text_color_black_second"
+            android:textSize="@dimen/text_size_xnormal" />
+
+        <EditText
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:background="@drawable/bg_edittext_phone_number"
+            android:hint="@string/new_phone_number"
+            android:padding="@dimen/dimen_8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:fontFamily="@font/sf_ui_display_bold"
+            android:text="@string/instructions"
+            android:textColor="@color/text_color_black_second"
+            android:textSize="@dimen/text_size_xxnormal" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lLayoutFirst">
+
+        <ImageView
+            android:id="@+id/imgInstructions"
+            android:layout_width="@dimen/dimen_12dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_instructions"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:fontFamily="@font/sf_ui_display_medium"
+            android:text="@string/change_phone_number"
+            android:textColor="@color/text_color_brown"
+            app:layout_constraintStart_toEndOf="@id/imgInstructions"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/do_re_login"
+            android:textColor="@color/text_color_brown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgInstructions" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:layout_width="@dimen/with_button"
+        android:layout_height="@dimen/height_button"
+        android:layout_marginBottom="@dimen/dimen_36dp"
+        android:backgroundTint="@color/color_blue_young"
+        android:fontFamily="@font/sf_ui_display_medium"
+        android:text="@string/save"
+        android:textSize="@dimen/text_size_xnormal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

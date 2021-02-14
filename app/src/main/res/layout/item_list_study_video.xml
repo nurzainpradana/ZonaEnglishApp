@@ -16,18 +16,19 @@
             android:id="@+id/imgViewStudyVideo"
             android:layout_width="50dp"
             android:layout_height="45dp"
+            android:scaleType="centerInside"
             android:layout_gravity="center"
             android:src="@drawable/ic_speak_up" />
 
         <TextView
+            android:id="@+id/tvTitleStudyVideo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_size_small"
             android:fontFamily="@font/sf_ui_display_semibold"
-            android:textColor="@color/text_color_gray1"
+            android:textColor="@color/text_color_gray_primary"
             android:text="@string/speak_up" />
 
     </LinearLayout>
-
 
 </androidx.cardview.widget.CardView>

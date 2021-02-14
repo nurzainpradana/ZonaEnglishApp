@@ -3,7 +3,12 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_18dp">18dp</dimen>
     <dimen name="dimen_32dp">32dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_36dp">36dp</dimen>
 
     <dimen name="theme_corner_radius">5dp</dimen>
     <dimen name="list_horizontal_margin">0dp</dimen>
@@ -28,6 +33,7 @@
     <dimen name="text_size_xnormal">16sp</dimen>
     <dimen name="text_size_xxnormal">18sp</dimen>
     <dimen name="text_size_header">20sp</dimen>
+    <dimen name="text_size_xheader">22sp</dimen>
     <dimen name="text_size_large">24sp</dimen>
     <dimen name="text_size_xlarge">26sp</dimen>
     <dimen name="text_size_xxlarge">28sp</dimen>
@@ -54,4 +60,9 @@
 
 
     <dimen name="widget_margin">0dp</dimen>
+    <dimen name="dimen_56dp">56dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="with_button">380dp</dimen>
+    <dimen name="height_button">50dp</dimen>
+    <dimen name="dimen_26dp">26dp</dimen>
 </resources>
